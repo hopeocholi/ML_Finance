@@ -7,8 +7,7 @@ Benchmarking six supervised regressors against the Black-Scholes surface on a hi
 ![Tests](https://img.shields.io/badge/tests-pytest-green)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Author: **Hope Eneojo Ocholi** — MSc FinTech, National College of Ireland.
-This repository accompanies the IEEE-format paper included under [`paper/`](paper/).
+Author: **Hope Eneojo Ocholi**
 
 ---
 
@@ -69,22 +68,7 @@ Permutation importance shows the Black-Scholes European price carries roughly 13
 ├── docs/                    # Methodology and results notes
 ├── requirements.txt
 └── README.md
-```
 
-## Quickstart
-
-```bash
-git clone https://github.com/<your-username>/ml-american-option-pricing.git
-cd ml-american-option-pricing
-
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-# run the tests
-pytest -q
-
-# open the full analysis
-jupyter lab notebooks/H9MLFF_CA2_option_pricing.ipynb
 ```
 
 ### Using the package directly
