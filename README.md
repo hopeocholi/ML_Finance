@@ -4,10 +4,12 @@ Benchmarking six supervised regressors against the Black-Scholes surface on a hi
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-orange)
-![Tests](https://img.shields.io/badge/tests-pytest-green)
+[![Tests](https://github.com/hopeocholi/ML_Finance/actions/workflows/tests.yml/badge.svg)](https://github.com/hopeocholi/ML_Finance/actions/workflows/tests.yml)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Author: **Hope Eneojo Ocholi**
+Author: **Hope Eneojo Ocholi** · MSc in FinTech, National College of Ireland (Machine Learning for Finance, H9MLFF)
+
+> **The idea in one line.** Rather than asking a model to rediscover Black-Scholes from scratch, I gave it the Black-Scholes price as a feature, so it only had to learn what the closed-form model misses: the value of exercising early.
 
 ---
 
@@ -68,7 +70,16 @@ Permutation importance shows the Black-Scholes European price carries roughly 13
 ├── docs/                    # Methodology and results notes
 ├── requirements.txt
 └── README.md
+```
 
+### Run it locally
+
+```bash
+git clone https://github.com/hopeocholi/ML_Finance.git
+cd ML_Finance
+pip install -r requirements.txt
+pytest -q
+jupyter lab notebooks/H9MLFF_CA2_option_pricing.ipynb
 ```
 
 ### Using the package directly
